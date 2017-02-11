@@ -13,4 +13,4 @@ const server = http.createServer(function(req, res){
     
 })
 
-server.listen(8080);
+server.listen(process.env.PORT || 8080); // don't hard-code the port
